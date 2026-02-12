@@ -1,8 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-
-import styles from "@/app/ui/home.module.css";
-import { lusitana } from "@/app/ui/fonts";
 
 const Page = () => {
   return (
@@ -13,7 +9,13 @@ const Page = () => {
       <div className="flex lg:flex-1">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">Your Company</span>
-          <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="" className="h-8 w-auto" />
+          <Image
+            src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
+            alt=""
+            width={32}
+            height={32}
+            className="h-8 w-auto"
+          />
         </a>
       </div>
       <div className="flex lg:hidden">

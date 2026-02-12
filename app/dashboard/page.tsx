@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   const posts = [
   {
@@ -80,10 +82,12 @@ export default function Page() {
 
               {/* Author */}
               <div className="mt-6 flex items-center gap-4">
-                <img
+                <Image
                   src={post.image}
                   className="h-10 w-10 rounded-full object-cover"
                   alt={post.author}
+                  width={40}
+                  height={40}
                 />
                 <div>
                   <p className="font-semibold text-white">{post.author}</p>
